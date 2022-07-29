@@ -1,4 +1,4 @@
-### Start frontend in dev mode
+### Start dev mode on http://localhost:8000/
 ```bash
-npm i && npm run dev
+npm i && npm run start
 ```
