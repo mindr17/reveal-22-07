@@ -39,7 +39,7 @@
 				
 				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
 					<h1>Without pm2:</h1>
-					<img src="/assets/without1.png">
+					<img src="/assets/without.png">
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #03440C, #2A9D8F)">
@@ -48,29 +48,131 @@
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
-					<h1 class="r-fit-text">why do i need this?</h1>
-					
-					<h2>Gradient Backgrounds</h2>
-					<pre><code class="hljs html wrap">&lt;section data-background-gradient=
-						"linear-gradient(to bottom, #ddd, #191919)"&gt;</code></pre>
+					<h1>Requirements:</h1>
+					<img src="/assets/nodejs.svg">
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Installation:</h1>
+					<pre><code class='bash'>
+	npm install pm2 -g
+					</code></pre>
+					<pre><code class='bash'>
+	pm2 -v
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Basic usage:</h1>
+					<pre><code class='bash'>
+	pm2 start index.js
+					</code></pre>
+					<pre><code class='bash'>
+	pm2 delete all
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Interface:</h1>
+					<img style="background: rgba(0,0,0,1);" src="/assets/interface.png">
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Access interface:</h1>
+					<pre><code class='bash'>
+	pm2 list
+					</code></pre>
+					or
+					<pre><code class='bash'>
+	pm2 l
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Restart:</h1>
+					<pre><code class='bash'>
+	pm2 restart all
+					</code></pre>
+					or hot reload without stopping
+					<pre><code class='bash'>
+	pm2 reload all
+					</code></pre>
 				</section>
 				
 				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
-					<h1 class="r-fit-text">why do i need this?</h1>
-					
-					<h2>Gradient Backgrounds</h2>
-					<pre><code class="hljs html wrap">&lt;section data-background-gradient=
-						"linear-gradient(to bottom, #ddd, #191919)"&gt;</code></pre>
+					<h1>More:</h1>
+					<pre><code class='bash'>
+	pm2 stop all
+					</code></pre>
+					<pre><code class='bash'>
+	pm2 delete all
+					</code></pre>
 				</section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Single process:</h1>
+					<pre><code class='bash'>
+	pm2 stop "process-id"
+					</code></pre>
+					Example:
+					<pre><code class='bash'>
+	pm2 stop 0
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Handle OS restarts:</h1>
+					<pre><code class='bash'>
+	pm2 save
+					</code></pre>
+					Manual, optionally:
+					<pre><code class='bash'>
+	pm2 resurrect
+					</code></pre>
+					<pre><code class='bash'>
+	pm2 startup
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Check logs:</h1>
+					<pre><code class='bash'>
+	pm2 log
+					</code></pre>
+					<img src="/assets/log.png">
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h1>Extend:</h1>
+					<pre><code class='bash'>
+	pm2 install "module-name"
+					</code></pre>
+					<pre><code class='bash'>
+	pm2 uninstall "module-name"
+					</code></pre>
+					Example:
+					<pre><code class='bash'>
+	pm2 install pm2-mongodb
+					</code></pre>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #03440C, #2A9D8F)">
+					<h2>Pros</h2>
+					<ol>
+						<li>Easy to install</li>
+						<li>Easy to use</li>
+						<li>Big community</li>
+						<li>Active support and development</li>
+						<li>Supports python and other scripts</li>
+					</ol>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #9E2A2B)">
+					<h2>Cons</h2>
+					<ol>
+						<li>Need nodejs installed</li>
+						<li>Doesn't support all possible types of scripts</li>
+					</ol>
 				</section>
 
 				<section>
@@ -81,8 +183,6 @@
 						<li>Three!</li>
 					</ol>
 				</section>
-
-
 
 				<section data-background-gradient="linear-gradient(to bottom, #540B0E, #540B0E)">
 					<h1 class="r-fit-text">Thanks for attention!</h1>
